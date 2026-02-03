@@ -36,11 +36,12 @@
         document.addEventListener("DOMContentLoaded", function () {
             const noButton = document.getElementById('no');
             const yesButton = document.getElementById('yes');
-            document.getElementById("background-music").play();
+            
             
             noButton.addEventListener('mouseenter', function () {
                 noButton.classList.add('shake');
                 generateEvilFaces();
+                document.getElementById("background-music").play();
             });
             
             noButton.addEventListener('mouseleave', function () {
