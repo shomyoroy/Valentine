@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const noButton = document.getElementById('no');
     const yesButton = document.getElementById('yes');
+    document.getElementById("background-music").play();
     
     // No button shakes and spawns evil faces when hovered
     noButton.addEventListener('mouseenter', function () {
@@ -15,9 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Yes button triggers confetti and music
     yesButton.addEventListener('click', function () {
-        alert('Yay! Can’t wait for our date! ❤️');
+        alert('Yay! Can’t wait for our date, Love! ❤️');
         confetti();
-        document.getElementById("background-music").play();
     });
 
     // Function to generate multiple evil face emojis
