@@ -21,6 +21,10 @@ body {
 
 /* Heading */
 h1 {
+    font-size: 3em;
+    color: red;
+}
+h2 {
     font-size: 2em;
     color: red;
 }
@@ -31,8 +35,8 @@ button {
     font-size: 1.2em;
     margin: 10px;
     border: none;
-    cursor: pointer;
-    transition: all 0.5s ease;
+    cursor: grab;
+    transition: all 0.3s ease;
 }
 
 /* Yes Button */
@@ -45,13 +49,13 @@ button {
     background-color: lightcoral;
     color: white;
     position: relative;
-    transition: transform 0.5s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* Shaking Animation */
 .shake {
     position: relative;
-    animation: flee 0.5s forwards;
+    animation: flee 2s forwards;
 }
 @keyframes flee {
     to { transform: translate(200px, 200px); opacity: 0; }
@@ -61,7 +65,7 @@ button {
 .evil-face {
     position: absolute;
     font-size: 2rem;
-    animation: fly 1s linear;
+    animation: fly 0.5s linear;
     pointer-events: none;
 }
 
