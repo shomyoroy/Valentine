@@ -4,8 +4,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(246, 170, 181);
-    font-family: Arial, sans-serif;
+    background-color: rgb(247, 59, 185);
+    font-family: Verdana, sans-serif;
     height: 100vh;
     margin: 0;
     text-align: center;
@@ -32,12 +32,12 @@ button {
     margin: 10px;
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 /* Yes Button */
 #yes {
-    background-color: rgb(195, 247, 195);
+    background-color: rgb(209, 4, 4);
 }
 
 /* No Button */
@@ -45,20 +45,16 @@ button {
     background-color: lightcoral;
     color: white;
     position: relative;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.5s ease, opacity 0.3s ease;
 }
 
 /* Shaking Animation */
-@keyframes shake {
-    0% { transform: translate(0px, 0px); }
-    25% { transform: translate(-5px, 5px); }
-    50% { transform: translate(5px, -5px); }
-    75% { transform: translate(-5px, -5px); }
-    100% { transform: translate(5px, 5px); }
-}
-
 .shake {
-    animation: shake 0.2s infinite;
+    position: relative;
+    animation: flee 0.5s forwards;
+}
+@keyframes flee {
+    to { transform: translate(200px, 200px); opacity: 0; }
 }
 
 /* Evil Face Emoji Animation */
