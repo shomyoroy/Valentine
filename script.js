@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to generate multiple evil face emojis
     function generateEvilFaces() {
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 10; i++) {
             let evilFace = document.createElement('div');
             evilFace.innerHTML = '😈';
             evilFace.classList.add('evil-face');
