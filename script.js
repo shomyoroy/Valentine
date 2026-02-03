@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     const noButton = document.getElementById('no');
     const yesButton = document.getElementById('yes');
-    document.getElementById("background-music").play();
+    
     
     // No button shakes and spawns evil faces when hovered
     noButton.addEventListener('mouseenter', function () {
         noButton.classList.add('shake');
         generateEvilFaces();
+        document.getElementById("background-music").play();
     });
     
     // No button stops shaking when the mouse leaves
@@ -24,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function generateEvilFaces() {
         for (let i = 0; i < 10; i++) {
             let evilFace = document.createElement('div');
-            evilFace.innerHTML = '😈';
+            evilFace.innerHTML = '😞';
             evilFace.classList.add('evil-face');
             document.body.appendChild(evilFace);
             
