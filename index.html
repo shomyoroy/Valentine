@@ -9,8 +9,9 @@
 <body>
     <div class="content-box">
         <h1>Will you be my Valentine, Vaishnavi?</h1>
+        <h2>Life is short and I want to make it longer, therefore be my valentine because whenever you are with me the time stops. It makes me feel excited and anxious at the same time.</h2>
         <div class="button-container">
-            <button id="yes">Yes</button>
+            <button id="yes">Always Yes</button>
             <button id="no">No</button>
         </div>
     </div>
@@ -26,7 +27,7 @@
     </footer>
 
     <audio id="background-music" loop>
-        <source src="https://raw.githubusercontent.com/TheDataDesk/Binary-Love/main/song.mp3" type="audio/mp3">
+        <source src="https://raw.githubusercontent.com/shomyoroy/Valentine/main/song.mp3" type="audio/mp3">
     </audio>
 
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0"></script>
@@ -35,6 +36,7 @@
         document.addEventListener("DOMContentLoaded", function () {
             const noButton = document.getElementById('no');
             const yesButton = document.getElementById('yes');
+            document.getElementById("background-music").play();
             
             noButton.addEventListener('mouseenter', function () {
                 noButton.classList.add('shake');
@@ -46,9 +48,9 @@
             });
             
             yesButton.addEventListener('click', function () {
-                alert('Yay! Can’t wait for our date! ❤️');
+                alert('Yay! Can’t wait for our dateand last Valentine's Week as fiances! ❤️');
                 confetti();
-                document.getElementById("background-music").play();
+                
             });
 
             function generateEvilFaces() {
